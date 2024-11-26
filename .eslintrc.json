@@ -1,3 +1,22 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    // 代码质量规则
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    
+    // React 规则
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    
+    // TypeScript 规则
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    
+    // 代码风格规则
+    "indent": ["warn", 2],
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "always"],
+    "max-len": ["warn", { "code": 120 }]
+  }
 }
